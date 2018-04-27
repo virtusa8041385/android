@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/sample"
+            android:scaleType="fitCenter" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_below="@+id/rel1"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+            <LinearLayout
+                android:id="@+id/lin1"
+                android:layout_weight="1"
+                android:layout_marginLeft="64dp"
+                android:layout_width="wrap_content"
+                android:background="@drawable/button_border"
+                android:layout_marginRight="2dp"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="4dp">
+                    <TextView
+                        android:id="@+id/txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="ARP - Positive"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:id="@+id/txt3"
+                        android:layout_below="@+id/txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="         Pay"
+                        android:gravity="center_vertical"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:id="@+id/txt4"
+                        android:layout_below="@+id/txt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   Exceptions"
+
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:id="@+id/txt5"
+                        android:layout_below="@+id/txt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="       Waiting"
+
+                        android:textColor="#000000"/>
+                    <LinearLayout
+                        android:layout_below="@+id/txt5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/border_layout">
+                        <TextView
+                            android:background="#4fab5b"
+                            android:layout_below="@+id/txt1"
+                            android:id="@+id/bt1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:textColor="#ffffff"
+                            android:gravity="center"
+                            android:text="   1    "/>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginRight="64dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/lin1"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp">
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Approvals"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:id="@+id/txt6"
+                        android:layout_below="@+id/txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  Waiting"
+                        android:textColor="#000000"/>
+                    <LinearLayout
+                        android:layout_below="@+id/txt6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="37dp"
+                        android:background="@drawable/border_layout">
+                        <TextView
+                            android:background="#4fab5b"
+
+                            android:id="@+id/bt2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:textColor="#ffffff"
+                            android:gravity="center"
+                            android:text="   78   "/>
+                    </LinearLayout>
+
+
+            </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_view2"
+        android:layout_below="@+id/rel2"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="              New Messages Waiting           "
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:background="@drawable/border_layout1"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_view2"
+        android:background="#e4e6e7"
+        android:id="@+id/rel3"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:text="Mar 12,2018 at 3:29 PM ET"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel4"
+        android:layout_below="@+id/rel3"
+        android:background="#ffffff">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   Deposit Accounts               "
+            android:id="@+id/text4"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/round_button"
+            android:text="&gt;"
+             />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" $44,729,307.09"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/text4"
+            android:gravity="center"
+            android:id="@+id/text5"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_layout2"
+            android:layout_below="@+id/text5">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="                                         Current Available"
+            android:textSize="15dp"
+            android:textColor="#000000"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel4"
+        android:background="#e4e6e7"
+        android:id="@+id/rel5"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:text="Mar 12,2018 at 3:29 PM ET"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel6"
+        android:layout_below="@+id/rel5"
+        android:background="#ffffff">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   Credit Accounts"
+            android:id="@+id/text6"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/round_button"
+            android:text="&gt;"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="     $0.00"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/text6"
+            android:gravity="center"
+            android:id="@+id/text7"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_layout3"
+            android:layout_below="@+id/text7"
+            android:id="@+id/l1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="                                        Credit Available"
+                android:gravity="center"
+                android:id="@+id/tv8"/>
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:id="@+id/b3"
+                android:text="submit"
+                android:layout_below="@+id/tv8"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#0450fb"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:text= "     Privacy Statement | Terms and Conditions | Full Site"/>
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_below="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="                                         Citibank,N.A."/>
+            <TextView
+                android:layout_below="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:text="                                      2018 Citigroup Inc."/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

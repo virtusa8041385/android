@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:theme="@android:style/Theme.Black.NoTitleBar">
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/sample"
+            android:scaleType="fitCenter" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_below="@+id/rel1"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+            <LinearLayout
+                android:id="@+id/lin1"
+                android:layout_weight="1"
+                android:layout_marginLeft="64dp"
+                android:layout_width="wrap_content"
+                android:background="@drawable/button_border"
+                android:layout_marginRight="16dp"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/border_layout4"
+                    android:padding="4dp">
+                    <TextView
+                        android:id="@+id/txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="ARP - Positive"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:id="@+id/txt3"
+                        android:layout_below="@+id/txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="         Pay"
+                        android:gravity="center_vertical"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:id="@+id/txt4"
+                        android:layout_below="@+id/txt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   Exceptions"
+
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:id="@+id/txt5"
+                        android:layout_below="@+id/txt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="       Waiting"
+
+                        android:textColor="#000000"/>
+                    <LinearLayout
+                        android:layout_below="@+id/txt5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/border_layout">
+                        <TextView
+                            android:background="@drawable/border_layout7"
+                            android:layout_below="@+id/txt1"
+                            android:id="@+id/bt1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:textColor="#ffffff"
+                            android:gravity="center"
+                            android:text="   1    "/>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_marginRight="64dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/lin1"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:background="@drawable/border_layout4">
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Approvals"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:id="@+id/txt6"
+                        android:layout_below="@+id/txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  Waiting"
+                        android:textColor="#000000"/>
+                    <LinearLayout
+                        android:layout_below="@+id/txt6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="37dp"
+                        android:background="@drawable/border_layout">
+                        <TextView
+                            android:background="@drawable/border_layout7"
+
+                            android:id="@+id/bt2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:textColor="#ffffff"
+                            android:gravity="center"
+                            android:text="   78   "/>
+                    </LinearLayout>
+
+
+            </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_view2"
+        android:layout_below="@+id/rel2"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="              New Messages Waiting           "
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginRight="-2dp"
+            android:background="@drawable/border_layout1"
+            android:id="@+id/tv6"
+            />
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv6"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffaabb"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_view2"
+        android:background="#e4e6e7"
+        android:id="@+id/rel3"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:text="Mar 12,2018 at 3:29 PM ET"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel4"
+        android:layout_below="@+id/rel3"
+        android:background="#ffffff">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   Deposit Accounts               "
+            android:id="@+id/text4"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/round_button"
+            android:text=">"
+            android:textSize="15dp"
+             />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" $44,729,307.09"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/text4"
+            android:gravity="center"
+            android:id="@+id/text5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="                                         Current Available"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/text5"
+            android:id="@+id/tv9"/>
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv9"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="80dp"
+            android:background="#E78640"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel4"
+        android:background="#e4e6e7"
+        android:id="@+id/rel5"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:text="Mar 12,2018 at 3:29 PM ET"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel6"
+        android:layout_below="@+id/rel5"
+        android:background="#ffffff">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   Credit Accounts"
+            android:id="@+id/text6"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/round_button"
+            android:text=">"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   $0.00"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/text6"
+            android:gravity="center"
+            android:id="@+id/text7"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="                 Credit Available"
+                android:gravity="center" 
+                android:id="@+id/tv8"
+                android:layout_below="@+id/text7"
+                />
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv8"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="80dp"
+            android:background="#E78640"/>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#004a93"
+            android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:text= "     Privacy Statement | Terms and Conditions | Full Site"/>
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/alex"
+            android:layout_below="@+id/tv1"
+            android:layout_marginTop="10dp"
+            android:id="@+id/img"
+            />
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_below="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="                                           Citibank, N.A."/>
+        <Button
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/bt3"
+            android:text="&#169;"
+            android:layout_marginTop="37dp"
+            android:background="@drawable/round_button2"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="115dp"/>
+
+
+
+        <TextView
+            android:layout_below="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:id="@+id/tv11"
+            android:layout_toRightOf="@+id/bt3"
+            android:layout_gravity="center"
+            android:text="   2018 Citigroup Inc."/>
+
+    </RelativeLayout>
+</RelativeLayout>
+
+</ScrollView>

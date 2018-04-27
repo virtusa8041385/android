@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003aaf"
+    android:theme="@android:style/Theme.Black.NoTitleBar"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/rel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/sample"
+            android:scaleType="fitCenter" />
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/rel1"
+        android:id="@+id/back_rel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#33A8FF"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="&lt;"
+            android:textSize="20dp"
+            android:id="@+id/t1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/t1"
+            android:text="Back"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="8dp"
+        android:background="#FFFFFf"
+        android:layout_below="@+id/back_rel"
+        android:layout_weight="1">
+       <EditText
+           android:id="@+id/business_code"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Business Code"/>
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/business_code"
+            android:hint="User ID"/>
+        <EditText
+            android:id="@+id/pass_word"
+            android:layout_below="@id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"/>
+        <RelativeLayout
+            android:layout_below="@id/pass_word"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="    Remember Code and ID"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rel_view1"
+        android:gravity="center"
+        android:padding="4dp"
+        android:background="@drawable/border_layout5">
+
+        <TextView
+            android:id="@+id/auto_token"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="10dp"
+            android:text="Auto Generate Token:              "
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <!--<ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/auto_token"/> -->
+
+        <Switch
+            android:id="@+id/simpleSwitch"
+            android:layout_width="50dp"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="37dp"
+            android:layout_marginRight="37dp"
+            android:background="#bbaa"
+            android:checked="true"
+            android:textColor="#ffffff"
+            android:textOff="Off"
+            android:textOn="On"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel_view3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_view2"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Token Instructions"
+            android:layout_marginLeft="4dp"
+            android:textColor="#ffffff"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:layout_marginRight="8dp"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel_view4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_view3">
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Sign On" />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#0450fb"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:text= "     Privacy Statement | Terms and Conditions | Full Site"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_below="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="                                         Citibank,N.A."/>
+        <TextView
+            android:layout_below="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:text="                                      2018 Citigroup Inc."/>
+    </RelativeLayout>
+</RelativeLayout>
